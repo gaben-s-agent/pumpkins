@@ -7,6 +7,7 @@ function main() {
     secondOperand = document.querySelector('#secondOperand')
     equalSign = document.querySelector('#equalSign')
     result = document.querySelector('#result')
+    resetInputs = document.querySelector('#resetInputs')
     pumpkinDiv = '<div class="col">🎃</div>'
 
     firstSign.addEventListener('click', ()=>{ 
@@ -47,6 +48,15 @@ function main() {
         for (let i = 0; i < e.target.value; i++) {
             result.nextElementSibling.insertAdjacentHTML('beforeEnd', pumpkinDiv)
         }
+    })
+
+    resetInputs.addEventListener('click', ()=>{
+        firstOperand.value = ''
+        firstOperand.nextElementSibling.innerHTML = ''
+        secondOperand.value = ''
+        secondOperand.nextElementSibling.innerHTML = ''
+        result.value = ''
+        result.nextElementSibling.innerHTML = ''
     })
 
 }

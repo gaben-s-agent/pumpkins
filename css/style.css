@@ -53,12 +53,20 @@ input[type="text"] {
 
 }
 
-.sign {
+.sign, #resetInputs{
     cursor: pointer;
     user-select: none;
 }
 
+#resetInputs span {
+    display: inline-flex;
+    position: relative;
+    top: -20px;
+    rotate: -90deg; 
+    font-size: 30px;
+}
+
 @font-face {
     font-family: 'customFont';
-    src: url('/pumpkins/css/SkrampCyr-Regular_0.ttf');
+    src: url('/css/SkrampCyr-Regular_0.ttf');
 }
